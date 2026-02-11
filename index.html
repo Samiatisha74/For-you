@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Red Envelope Love Letter</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url('your-background-image-url.jpg'); /* Set your royalty-free background image */
+            background-size: cover;
+            overflow: hidden;
+        }
+        .hearts {
+            position: absolute;
+            animation: float 5s infinite;
+        }
+        @keyframes float {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+            100% { transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <div class="hearts">
+        <img src="heart-animation.gif" alt="Heart Animation"> <!-- Add your animated heart gif -->
+    </div>
+    <audio controls autoplay loop>
+        <source src="your-royalty-free-music-url.mp3" type="audio/mpeg"> <!-- Replace with your music URL -->
+        Your browser does not support the audio element.
+    </audio>
+    <div>
+        <h1>Open Your Love</h1>
+        <p>Scan the QR code to view your special message!</p>
+        <img src="your-qr-code-url.png" alt="QR Code"> <!-- Replace with your QR code URL -->
+    </div>
+</body>
+</html>
