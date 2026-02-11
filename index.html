@@ -3,52 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Get Well Soon</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            background-color: #fff0f0;
-            padding: 20px;
-        }
-        .envelope {
-            width: 200px;
-            height: 120px;
-            background-color: red;
-            position: relative;
-            margin: auto;
-            border-radius: 10px;
-        }
-        .heart {
-            color: red;
-            font-size: 24px;
-            animation: beat 1s infinite;
-        }
-        @keyframes beat {
-            0%, 100% { transform: scale(1); }
-            50% { transform: scale(1.2); }
-        }
-        audio {
-            margin-top: 20px;
-        }
-    </style>
+    <title>For You - Love Letter</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrious/2.10.0/qrious.min.js"></script>
 </head>
 <body>
-    <h2>Get Well Soon!</h2>
-    <div class="envelope">
-        <!-- Red Envelope -->
+    <div class="hearts-container" id="heartsContainer"></div>
+    
+    <div class="container">
+        <h1>💌 For You 💌</h1>
+        
+        <div class="envelope" id="envelope">
+            <div class="envelope-text">📮 Tap to Open</div>
+        </div>
+        
+        <div class="letter-content" id="letterContent">
+            <div class="letter-title">My Dearest,</div>
+            
+            <p>Beloved beyond all names and forms,<br>
+            You dwell where the mind cannot reach.<br>
+            When I searched the world for You,<br>
+            I found You waiting quietly within my breath.</p>
+
+            <p>You are the wine that makes the soul forget its wounds,<br>
+            the fire that turns longing into prayer.<br>
+            When I fall apart, You gather me again<br>
+            without asking why I broke.</p>
+
+            <p>Every step I take is already held by You,<br>
+            every tear knows the way to Your ocean.<br>
+            I thought I was alone in this vast night—<br>
+            but even my loneliness was Your embrace.</p>
+
+            <p>You speak through silence,<br>
+            You answer before the question is born.<br>
+            In my weakness, You are strength;<br>
+            in my emptiness, You arrive as fullness.</p>
+
+            <p class="get-well">💕 Get Well Soon Love 💕</p>
+        </div>
+
+        <audio id="audioPlayer" controls>
+            <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
     </div>
-    <div class="hearts">
-        ❤️❤️❤️
-    </div>
-    <audio controls>
-        <source src="your-audio-file.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
-    </audio>
-    <div class="letter">
-        <p>Dear Friend,</p>
-        <p>Here's a little something to brighten your day.</p>
-        <p>"Get well soon, love."</p>
-    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
