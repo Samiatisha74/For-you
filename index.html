@@ -1,54 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>For You - Love Letter</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrious/2.10.0/qrious.min.js"></script>
+    <title>QR Code Generator</title>
 </head>
 <body>
-    <div class="hearts-container" id="heartsContainer"></div>
-    
-    <div class="container">
-        <h1>💌 For You 💌</h1>
-        
-        <div class="envelope" id="envelope">
-            <div class="envelope-text">📮 Tap to Open</div>
-        </div>
-        
-        <div class="letter-content" id="letterContent">
-            <div class="letter-title">My Dearest,</div>
-            
-            <p>Beloved beyond all names and forms,<br>
-            You dwell where the mind cannot reach.<br>
-            When I searched the world for You,<br>
-            I found You waiting quietly within my breath.</p>
-
-            <p>You are the wine that makes the soul forget its wounds,<br>
-            the fire that turns longing into prayer.<br>
-            When I fall apart, You gather me again<br>
-            without asking why I broke.</p>
-
-            <p>Every step I take is already held by You,<br>
-            every tear knows the way to Your ocean.<br>
-            I thought I was alone in this vast night—<br>
-            but even my loneliness was Your embrace.</p>
-
-            <p>You speak through silence,<br>
-            You answer before the question is born.<br>
-            In my weakness, You are strength;<br>
-            in my emptiness, You arrive as fullness.</p>
-
-            <p class="get-well">💕 Get Well Soon Love 💕</p>
-        </div>
-
-        <audio id="audioPlayer" controls>
-            <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
-            Your browser does not support the audio element.
-        </audio>
-    </div>
-
-    <script src="script.js"></script>
+    <h1>QR Code Generator</h1>
+    <canvas id="qrcode" style="border: 1px solid black;"></canvas>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.qrcode/1.0/jquery.qrcode.min.js"></script>
+    <script>
+        $(function() {
+            $('#qrcode').qrcode({
+                width: 128,
+                height: 128,
+                text: 'https://samiatisha74.github.io/for-you/'
+            });
+        });
+    </script>
 </body>
 </html>
